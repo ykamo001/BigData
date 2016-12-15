@@ -1,3 +1,6 @@
+#featureSearch
+featureSearch is an artificial intelligence program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
+ 
 ###Findings
 The datasets that pertained to me were for number 29. 
 For the small file, the features that were useful were 6 and 2, with an accuracy of about 91%.
