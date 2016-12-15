@@ -1,0 +1,106 @@
+Please enter the file you would like to extrapolate information from: cs_170_small29.txt
+Normalizing data, please wait..
+
+Please select the search routine you would like to implement: 
+1. Forward Search
+2. Backward Search
+3. Custom Search
+option:1
+
+Iteration: 1. Searching over features: 
+adding feature: 1 has accuracy of: 66
+adding feature: 2 has accuracy of: 72
+adding feature: 3 has accuracy of: 61
+adding feature: 4 has accuracy of: 73
+adding feature: 5 has accuracy of: 65
+adding feature: 6 has accuracy of: 84
+adding feature: 7 has accuracy of: 68
+adding feature: 8 has accuracy of: 59
+adding feature: 9 has accuracy of: 61
+adding feature: 10 has accuracy of: 63
+Local max is: 84
+Keeping feature: 6
+
+Iteration: 2. Searching over features: 6 
+adding feature: 1 has accuracy of: 77
+adding feature: 2 has accuracy of: 91
+adding feature: 3 has accuracy of: 77
+adding feature: 4 has accuracy of: 88
+adding feature: 5 has accuracy of: 81
+adding feature: 7 has accuracy of: 88
+adding feature: 8 has accuracy of: 81
+adding feature: 9 has accuracy of: 82
+adding feature: 10 has accuracy of: 78
+Local max is: 91
+Keeping feature: 2
+
+Iteration: 3. Searching over features: 6 2 
+adding feature: 1 has accuracy of: 78
+adding feature: 3 has accuracy of: 88
+adding feature: 4 has accuracy of: 87
+adding feature: 5 has accuracy of: 84
+adding feature: 7 has accuracy of: 83
+adding feature: 8 has accuracy of: 78
+adding feature: 9 has accuracy of: 81
+adding feature: 10 has accuracy of: 85
+Local max is: 88
+Keeping feature: 3
+
+Iteration: 4. Searching over features: 6 2 3 
+adding feature: 1 has accuracy of: 81
+adding feature: 4 has accuracy of: 78
+adding feature: 5 has accuracy of: 82
+adding feature: 7 has accuracy of: 76
+adding feature: 8 has accuracy of: 72
+adding feature: 9 has accuracy of: 78
+adding feature: 10 has accuracy of: 83
+Local max is: 83
+Keeping feature: 10
+
+Iteration: 5. Searching over features: 6 2 3 10 
+adding feature: 1 has accuracy of: 74
+adding feature: 4 has accuracy of: 76
+adding feature: 5 has accuracy of: 77
+adding feature: 7 has accuracy of: 78
+adding feature: 8 has accuracy of: 63
+adding feature: 9 has accuracy of: 76
+Local max is: 78
+Keeping feature: 7
+
+Iteration: 6. Searching over features: 6 2 3 10 7 
+adding feature: 1 has accuracy of: 71
+adding feature: 4 has accuracy of: 79
+adding feature: 5 has accuracy of: 77
+adding feature: 8 has accuracy of: 67
+adding feature: 9 has accuracy of: 77
+Local max is: 79
+Keeping feature: 4
+
+Iteration: 7. Searching over features: 6 2 3 10 7 4 
+adding feature: 1 has accuracy of: 68
+adding feature: 5 has accuracy of: 77
+adding feature: 8 has accuracy of: 61
+adding feature: 9 has accuracy of: 68
+Local max is: 77
+Keeping feature: 5
+
+Iteration: 8. Searching over features: 6 2 3 10 7 4 5 
+adding feature: 1 has accuracy of: 64
+adding feature: 8 has accuracy of: 58
+adding feature: 9 has accuracy of: 70
+Local max is: 70
+Keeping feature: 9
+
+Iteration: 9. Searching over features: 6 2 3 10 7 4 5 9 
+adding feature: 1 has accuracy of: 62
+adding feature: 8 has accuracy of: 55
+Local max is: 62
+Keeping feature: 1
+
+Iteration: 10. Searching over features: 6 2 3 10 7 4 5 9 1 
+adding feature: 8 has accuracy of: 56
+Local max is: 56
+Keeping feature: 8
+
+Best features are: 6 2 
+With accuracy of: 91

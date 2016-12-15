@@ -1,0 +1,983 @@
+Please enter the file you would like to extrapolate information from: Normalizing data, please wait..
+Iteration: 1. Searching over features: 
+adding feature: 1 has accuracy of: 67
+adding feature: 2 has accuracy of: 66.8
+adding feature: 3 has accuracy of: 69.4
+adding feature: 4 has accuracy of: 68.5
+adding feature: 5 has accuracy of: 69.3
+adding feature: 6 has accuracy of: 67
+adding feature: 7 has accuracy of: 68.5
+adding feature: 8 has accuracy of: 66.5
+adding feature: 9 has accuracy of: 70.9
+adding feature: 10 has accuracy of: 66.7
+adding feature: 11 has accuracy of: 69.1
+adding feature: 12 has accuracy of: 66.6
+adding feature: 13 has accuracy of: 67.6
+adding feature: 14 has accuracy of: 68.8
+adding feature: 15 has accuracy of: 69.7
+adding feature: 16 has accuracy of: 68.4
+adding feature: 17 has accuracy of: 70.2
+adding feature: 18 has accuracy of: 67.4
+adding feature: 19 has accuracy of: 69.9
+adding feature: 20 has accuracy of: 84.6
+adding feature: 21 has accuracy of: 69.1
+adding feature: 22 has accuracy of: 68.9
+adding feature: 23 has accuracy of: 69.8
+adding feature: 24 has accuracy of: 69.8
+adding feature: 25 has accuracy of: 68.9
+adding feature: 26 has accuracy of: 72.2
+adding feature: 27 has accuracy of: 69.1
+adding feature: 28 has accuracy of: 70.5
+adding feature: 29 has accuracy of: 69.7
+adding feature: 30 has accuracy of: 67.2
+adding feature: 31 has accuracy of: 68.1
+adding feature: 32 has accuracy of: 70.3
+adding feature: 33 has accuracy of: 69.9
+adding feature: 34 has accuracy of: 68.1
+adding feature: 35 has accuracy of: 69.8
+adding feature: 36 has accuracy of: 70.8
+adding feature: 37 has accuracy of: 67.6
+adding feature: 38 has accuracy of: 68.7
+adding feature: 39 has accuracy of: 68.5
+adding feature: 40 has accuracy of: 70.5
+Local max is: 84.6
+Keeping feature: 20
+
+Iteration: 2. Searching over features: 20 
+adding feature: 1 has accuracy of: 83.3
+adding feature: 2 has accuracy of: 83.4
+adding feature: 3 has accuracy of: 83.5
+adding feature: 4 has accuracy of: 82.5
+adding feature: 5 has accuracy of: 83
+adding feature: 6 has accuracy of: 83.4
+adding feature: 7 has accuracy of: 82.9
+adding feature: 8 has accuracy of: 82.6
+adding feature: 9 has accuracy of: 83.6
+adding feature: 10 has accuracy of: 81.2
+adding feature: 11 has accuracy of: 83
+adding feature: 12 has accuracy of: 82.6
+adding feature: 13 has accuracy of: 83
+adding feature: 14 has accuracy of: 81.4
+adding feature: 15 has accuracy of: 84
+adding feature: 16 has accuracy of: 83
+adding feature: 17 has accuracy of: 83.6
+adding feature: 18 has accuracy of: 81.6
+adding feature: 19 has accuracy of: 82.4
+adding feature: 21 has accuracy of: 83.1
+adding feature: 22 has accuracy of: 82.7
+adding feature: 23 has accuracy of: 82.3
+adding feature: 24 has accuracy of: 82.2
+adding feature: 25 has accuracy of: 85.9
+adding feature: 26 has accuracy of: 96.7
+adding feature: 27 has accuracy of: 81.5
+adding feature: 28 has accuracy of: 82.2
+adding feature: 29 has accuracy of: 84.7
+adding feature: 30 has accuracy of: 83.9
+adding feature: 31 has accuracy of: 83.7
+adding feature: 32 has accuracy of: 82.1
+adding feature: 33 has accuracy of: 80.3
+adding feature: 34 has accuracy of: 82.6
+adding feature: 35 has accuracy of: 82.7
+adding feature: 36 has accuracy of: 84.3
+adding feature: 37 has accuracy of: 82.8
+adding feature: 38 has accuracy of: 84.2
+adding feature: 39 has accuracy of: 81.6
+adding feature: 40 has accuracy of: 82.8
+Local max is: 96.7
+Keeping feature: 26
+
+Iteration: 3. Searching over features: 20 26 
+adding feature: 1 has accuracy of: 91.5
+adding feature: 2 has accuracy of: 93.1
+adding feature: 3 has accuracy of: 93.9
+adding feature: 4 has accuracy of: 94.2
+adding feature: 5 has accuracy of: 92.5
+adding feature: 6 has accuracy of: 94.8
+adding feature: 7 has accuracy of: 92.4
+adding feature: 8 has accuracy of: 93.2
+adding feature: 9 has accuracy of: 93.3
+adding feature: 10 has accuracy of: 93.3
+adding feature: 11 has accuracy of: 92.5
+adding feature: 12 has accuracy of: 93.2
+adding feature: 13 has accuracy of: 92.9
+adding feature: 14 has accuracy of: 92.3
+adding feature: 15 has accuracy of: 95.7
+adding feature: 16 has accuracy of: 94.1
+adding feature: 17 has accuracy of: 93.6
+adding feature: 18 has accuracy of: 92.4
+adding feature: 19 has accuracy of: 94.6
+adding feature: 21 has accuracy of: 94
+adding feature: 22 has accuracy of: 93.3
+adding feature: 23 has accuracy of: 94.6
+adding feature: 24 has accuracy of: 93.3
+adding feature: 25 has accuracy of: 95.1
+adding feature: 27 has accuracy of: 92.3
+adding feature: 28 has accuracy of: 92.7
+adding feature: 29 has accuracy of: 94.3
+adding feature: 30 has accuracy of: 93.5
+adding feature: 31 has accuracy of: 93.9
+adding feature: 32 has accuracy of: 92.5
+adding feature: 33 has accuracy of: 93.6
+adding feature: 34 has accuracy of: 94.1
+adding feature: 35 has accuracy of: 93.8
+adding feature: 36 has accuracy of: 94.3
+adding feature: 37 has accuracy of: 91.7
+adding feature: 38 has accuracy of: 93
+adding feature: 39 has accuracy of: 92.5
+adding feature: 40 has accuracy of: 92.6
+Local max is: 95.7
+Keeping feature: 15
+
+Iteration: 4. Searching over features: 20 26 15 
+adding feature: 1 has accuracy of: 90.1
+adding feature: 2 has accuracy of: 90.1
+adding feature: 3 has accuracy of: 91.3
+adding feature: 4 has accuracy of: 89.8
+adding feature: 5 has accuracy of: 90.2
+adding feature: 6 has accuracy of: 91.1
+adding feature: 7 has accuracy of: 90.2
+adding feature: 8 has accuracy of: 89.7
+adding feature: 9 has accuracy of: 90.2
+adding feature: 10 has accuracy of: 90.4
+adding feature: 11 has accuracy of: 91.3
+adding feature: 12 has accuracy of: 91.3
+adding feature: 13 has accuracy of: 90.8
+adding feature: 14 has accuracy of: 90.1
+adding feature: 16 has accuracy of: 90.8
+adding feature: 17 has accuracy of: 88.8
+adding feature: 18 has accuracy of: 89.6
+adding feature: 19 has accuracy of: 91
+adding feature: 21 has accuracy of: 91
+adding feature: 22 has accuracy of: 90.4
+adding feature: 23 has accuracy of: 92.1
+adding feature: 24 has accuracy of: 90.6
+adding feature: 25 has accuracy of: 90.6
+adding feature: 27 has accuracy of: 90.6
+adding feature: 28 has accuracy of: 89.9
+adding feature: 29 has accuracy of: 90.6
+adding feature: 30 has accuracy of: 91.4
+adding feature: 31 has accuracy of: 90.3
+adding feature: 32 has accuracy of: 90.6
+adding feature: 33 has accuracy of: 89.4
+adding feature: 34 has accuracy of: 90.5
+adding feature: 35 has accuracy of: 90.3
+adding feature: 36 has accuracy of: 90.2
+adding feature: 37 has accuracy of: 88.5
+adding feature: 38 has accuracy of: 89.2
+adding feature: 39 has accuracy of: 88.7
+adding feature: 40 has accuracy of: 90.7
+Local max is: 92.1
+Keeping feature: 23
+
+Iteration: 5. Searching over features: 20 26 15 23 
+adding feature: 1 has accuracy of: 86.7
+adding feature: 2 has accuracy of: 87.1
+adding feature: 3 has accuracy of: 86.3
+adding feature: 4 has accuracy of: 87.5
+adding feature: 5 has accuracy of: 87.1
+adding feature: 6 has accuracy of: 86.6
+adding feature: 7 has accuracy of: 87.7
+adding feature: 8 has accuracy of: 86.8
+adding feature: 9 has accuracy of: 88.2
+adding feature: 10 has accuracy of: 86.9
+adding feature: 11 has accuracy of: 87.5
+adding feature: 12 has accuracy of: 86.1
+adding feature: 13 has accuracy of: 85.4
+adding feature: 14 has accuracy of: 87.8
+adding feature: 16 has accuracy of: 88.2
+adding feature: 17 has accuracy of: 86.5
+adding feature: 18 has accuracy of: 86.6
+adding feature: 19 has accuracy of: 87.7
+adding feature: 21 has accuracy of: 88.5
+adding feature: 22 has accuracy of: 86.6
+adding feature: 24 has accuracy of: 86.3
+adding feature: 25 has accuracy of: 86.8
+adding feature: 27 has accuracy of: 87.6
+adding feature: 28 has accuracy of: 86.8
+adding feature: 29 has accuracy of: 86.1
+adding feature: 30 has accuracy of: 88.4
+adding feature: 31 has accuracy of: 86.5
+adding feature: 32 has accuracy of: 88.1
+adding feature: 33 has accuracy of: 87.8
+adding feature: 34 has accuracy of: 87.4
+adding feature: 35 has accuracy of: 86
+adding feature: 36 has accuracy of: 87.3
+adding feature: 37 has accuracy of: 87.7
+adding feature: 38 has accuracy of: 87.8
+adding feature: 39 has accuracy of: 86.2
+adding feature: 40 has accuracy of: 87.2
+Local max is: 88.5
+Keeping feature: 21
+
+Iteration: 6. Searching over features: 20 26 15 23 21 
+adding feature: 1 has accuracy of: 84.5
+adding feature: 2 has accuracy of: 86.2
+adding feature: 3 has accuracy of: 82.5
+adding feature: 4 has accuracy of: 84.3
+adding feature: 5 has accuracy of: 85.9
+adding feature: 6 has accuracy of: 83.8
+adding feature: 7 has accuracy of: 83.9
+adding feature: 8 has accuracy of: 85.2
+adding feature: 9 has accuracy of: 83.6
+adding feature: 10 has accuracy of: 83.2
+adding feature: 11 has accuracy of: 85.8
+adding feature: 12 has accuracy of: 84.1
+adding feature: 13 has accuracy of: 83.3
+adding feature: 14 has accuracy of: 85.5
+adding feature: 16 has accuracy of: 85.8
+adding feature: 17 has accuracy of: 84.9
+adding feature: 18 has accuracy of: 84.5
+adding feature: 19 has accuracy of: 84
+adding feature: 22 has accuracy of: 83.9
+adding feature: 24 has accuracy of: 84.6
+adding feature: 25 has accuracy of: 84
+adding feature: 27 has accuracy of: 84.8
+adding feature: 28 has accuracy of: 84.8
+adding feature: 29 has accuracy of: 84.1
+adding feature: 30 has accuracy of: 85.6
+adding feature: 31 has accuracy of: 83.7
+adding feature: 32 has accuracy of: 84.7
+adding feature: 33 has accuracy of: 84.5
+adding feature: 34 has accuracy of: 85.1
+adding feature: 35 has accuracy of: 84.9
+adding feature: 36 has accuracy of: 85.2
+adding feature: 37 has accuracy of: 86.4
+adding feature: 38 has accuracy of: 85.1
+adding feature: 39 has accuracy of: 84.3
+adding feature: 40 has accuracy of: 84.3
+Local max is: 86.4
+Keeping feature: 37
+
+Iteration: 7. Searching over features: 20 26 15 23 21 37 
+adding feature: 1 has accuracy of: 82.8
+adding feature: 2 has accuracy of: 82.7
+adding feature: 3 has accuracy of: 82.4
+adding feature: 4 has accuracy of: 82.8
+adding feature: 5 has accuracy of: 82.5
+adding feature: 6 has accuracy of: 82.2
+adding feature: 7 has accuracy of: 82.2
+adding feature: 8 has accuracy of: 82.6
+adding feature: 9 has accuracy of: 81.5
+adding feature: 10 has accuracy of: 82.1
+adding feature: 11 has accuracy of: 81.2
+adding feature: 12 has accuracy of: 83.6
+adding feature: 13 has accuracy of: 82.8
+adding feature: 14 has accuracy of: 80.6
+adding feature: 16 has accuracy of: 83
+adding feature: 17 has accuracy of: 82.1
+adding feature: 18 has accuracy of: 82.1
+adding feature: 19 has accuracy of: 83.4
+adding feature: 22 has accuracy of: 81.9
+adding feature: 24 has accuracy of: 83.5
+adding feature: 25 has accuracy of: 82
+adding feature: 27 has accuracy of: 81.8
+adding feature: 28 has accuracy of: 81.2
+adding feature: 29 has accuracy of: 82.1
+adding feature: 30 has accuracy of: 82.5
+adding feature: 31 has accuracy of: 81.5
+adding feature: 32 has accuracy of: 83.7
+adding feature: 33 has accuracy of: 81.8
+adding feature: 34 has accuracy of: 82.5
+adding feature: 35 has accuracy of: 82.7
+adding feature: 36 has accuracy of: 82.5
+adding feature: 38 has accuracy of: 83.4
+adding feature: 39 has accuracy of: 81.6
+adding feature: 40 has accuracy of: 84.9
+Local max is: 84.9
+Keeping feature: 40
+
+Iteration: 8. Searching over features: 20 26 15 23 21 37 40 
+adding feature: 1 has accuracy of: 80
+adding feature: 2 has accuracy of: 80.7
+adding feature: 3 has accuracy of: 80.8
+adding feature: 4 has accuracy of: 81
+adding feature: 5 has accuracy of: 80.9
+adding feature: 6 has accuracy of: 82.5
+adding feature: 7 has accuracy of: 81
+adding feature: 8 has accuracy of: 80.5
+adding feature: 9 has accuracy of: 81.1
+adding feature: 10 has accuracy of: 80.1
+adding feature: 11 has accuracy of: 79.8
+adding feature: 12 has accuracy of: 80.8
+adding feature: 13 has accuracy of: 79.5
+adding feature: 14 has accuracy of: 79.6
+adding feature: 16 has accuracy of: 81.3
+adding feature: 17 has accuracy of: 79.7
+adding feature: 18 has accuracy of: 81
+adding feature: 19 has accuracy of: 82
+adding feature: 22 has accuracy of: 80.3
+adding feature: 24 has accuracy of: 82.6
+adding feature: 25 has accuracy of: 81.5
+adding feature: 27 has accuracy of: 81.2
+adding feature: 28 has accuracy of: 80.4
+adding feature: 29 has accuracy of: 80.6
+adding feature: 30 has accuracy of: 81.4
+adding feature: 31 has accuracy of: 80.4
+adding feature: 32 has accuracy of: 81.9
+adding feature: 33 has accuracy of: 81.6
+adding feature: 34 has accuracy of: 80.4
+adding feature: 35 has accuracy of: 80.1
+adding feature: 36 has accuracy of: 80.6
+adding feature: 38 has accuracy of: 81.6
+adding feature: 39 has accuracy of: 81.1
+Local max is: 82.6
+Keeping feature: 24
+
+Iteration: 9. Searching over features: 20 26 15 23 21 37 40 24 
+adding feature: 1 has accuracy of: 80.5
+adding feature: 2 has accuracy of: 80.4
+adding feature: 3 has accuracy of: 80
+adding feature: 4 has accuracy of: 80.3
+adding feature: 5 has accuracy of: 78.4
+adding feature: 6 has accuracy of: 81.8
+adding feature: 7 has accuracy of: 78.6
+adding feature: 8 has accuracy of: 80.8
+adding feature: 9 has accuracy of: 78.1
+adding feature: 10 has accuracy of: 79.1
+adding feature: 11 has accuracy of: 79.9
+adding feature: 12 has accuracy of: 81.4
+adding feature: 13 has accuracy of: 80.9
+adding feature: 14 has accuracy of: 78.5
+adding feature: 16 has accuracy of: 81.1
+adding feature: 17 has accuracy of: 77
+adding feature: 18 has accuracy of: 80.1
+adding feature: 19 has accuracy of: 79.8
+adding feature: 22 has accuracy of: 78.7
+adding feature: 25 has accuracy of: 81.2
+adding feature: 27 has accuracy of: 79.5
+adding feature: 28 has accuracy of: 78.6
+adding feature: 29 has accuracy of: 77.7
+adding feature: 30 has accuracy of: 79.3
+adding feature: 31 has accuracy of: 79.7
+adding feature: 32 has accuracy of: 80.3
+adding feature: 33 has accuracy of: 79.8
+adding feature: 34 has accuracy of: 80.2
+adding feature: 35 has accuracy of: 79.4
+adding feature: 36 has accuracy of: 79.8
+adding feature: 38 has accuracy of: 79.1
+adding feature: 39 has accuracy of: 79.1
+Local max is: 81.8
+Keeping feature: 6
+
+Iteration: 10. Searching over features: 20 26 15 23 21 37 40 24 6 
+adding feature: 1 has accuracy of: 78.6
+adding feature: 2 has accuracy of: 77.7
+adding feature: 3 has accuracy of: 78.1
+adding feature: 4 has accuracy of: 79
+adding feature: 5 has accuracy of: 78.7
+adding feature: 7 has accuracy of: 76.8
+adding feature: 8 has accuracy of: 79.3
+adding feature: 9 has accuracy of: 77.9
+adding feature: 10 has accuracy of: 79.6
+adding feature: 11 has accuracy of: 78.3
+adding feature: 12 has accuracy of: 79.4
+adding feature: 13 has accuracy of: 79.9
+adding feature: 14 has accuracy of: 78.2
+adding feature: 16 has accuracy of: 79.4
+adding feature: 17 has accuracy of: 78.9
+adding feature: 18 has accuracy of: 79.4
+adding feature: 19 has accuracy of: 78.2
+adding feature: 22 has accuracy of: 77.8
+adding feature: 25 has accuracy of: 78.6
+adding feature: 27 has accuracy of: 80.4
+adding feature: 28 has accuracy of: 77.4
+adding feature: 29 has accuracy of: 77.6
+adding feature: 30 has accuracy of: 79.6
+adding feature: 31 has accuracy of: 76.6
+adding feature: 32 has accuracy of: 78.1
+adding feature: 33 has accuracy of: 78.2
+adding feature: 34 has accuracy of: 79.7
+adding feature: 35 has accuracy of: 79.2
+adding feature: 36 has accuracy of: 79
+adding feature: 38 has accuracy of: 77.9
+adding feature: 39 has accuracy of: 78.1
+Local max is: 80.4
+Keeping feature: 27
+
+Iteration: 11. Searching over features: 20 26 15 23 21 37 40 24 6 27 
+adding feature: 1 has accuracy of: 78
+adding feature: 2 has accuracy of: 78.2
+adding feature: 3 has accuracy of: 78.5
+adding feature: 4 has accuracy of: 77.5
+adding feature: 5 has accuracy of: 77.7
+adding feature: 7 has accuracy of: 76.6
+adding feature: 8 has accuracy of: 77.7
+adding feature: 9 has accuracy of: 76.2
+adding feature: 10 has accuracy of: 79.2
+adding feature: 11 has accuracy of: 77.1
+adding feature: 12 has accuracy of: 78.7
+adding feature: 13 has accuracy of: 80.5
+adding feature: 14 has accuracy of: 78.9
+adding feature: 16 has accuracy of: 78.2
+adding feature: 17 has accuracy of: 77
+adding feature: 18 has accuracy of: 77.3
+adding feature: 19 has accuracy of: 77
+adding feature: 22 has accuracy of: 75.9
+adding feature: 25 has accuracy of: 78.2
+adding feature: 28 has accuracy of: 77.1
+adding feature: 29 has accuracy of: 78.3
+adding feature: 30 has accuracy of: 79.3
+adding feature: 31 has accuracy of: 76.9
+adding feature: 32 has accuracy of: 77
+adding feature: 33 has accuracy of: 77.7
+adding feature: 34 has accuracy of: 79.6
+adding feature: 35 has accuracy of: 78.2
+adding feature: 36 has accuracy of: 78.2
+adding feature: 38 has accuracy of: 76.1
+adding feature: 39 has accuracy of: 77.6
+Local max is: 80.5
+Keeping feature: 13
+
+Iteration: 12. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 
+adding feature: 1 has accuracy of: 78
+adding feature: 2 has accuracy of: 78.2
+adding feature: 3 has accuracy of: 76.8
+adding feature: 4 has accuracy of: 76.7
+adding feature: 5 has accuracy of: 78.1
+adding feature: 7 has accuracy of: 77.2
+adding feature: 8 has accuracy of: 78.2
+adding feature: 9 has accuracy of: 78.1
+adding feature: 10 has accuracy of: 78
+adding feature: 11 has accuracy of: 76.5
+adding feature: 12 has accuracy of: 78.9
+adding feature: 14 has accuracy of: 78.3
+adding feature: 16 has accuracy of: 78
+adding feature: 17 has accuracy of: 77.5
+adding feature: 18 has accuracy of: 77
+adding feature: 19 has accuracy of: 76.8
+adding feature: 22 has accuracy of: 74.3
+adding feature: 25 has accuracy of: 77.7
+adding feature: 28 has accuracy of: 75.8
+adding feature: 29 has accuracy of: 77.8
+adding feature: 30 has accuracy of: 78.2
+adding feature: 31 has accuracy of: 76.4
+adding feature: 32 has accuracy of: 76.7
+adding feature: 33 has accuracy of: 77.1
+adding feature: 34 has accuracy of: 77.2
+adding feature: 35 has accuracy of: 77.8
+adding feature: 36 has accuracy of: 78.5
+adding feature: 38 has accuracy of: 76.7
+adding feature: 39 has accuracy of: 76.6
+Local max is: 78.9
+Keeping feature: 12
+
+Iteration: 13. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 
+adding feature: 1 has accuracy of: 77
+adding feature: 2 has accuracy of: 77.2
+adding feature: 3 has accuracy of: 76.2
+adding feature: 4 has accuracy of: 75.9
+adding feature: 5 has accuracy of: 76.5
+adding feature: 7 has accuracy of: 76.6
+adding feature: 8 has accuracy of: 76.2
+adding feature: 9 has accuracy of: 77.7
+adding feature: 10 has accuracy of: 77.3
+adding feature: 11 has accuracy of: 77.4
+adding feature: 14 has accuracy of: 77.5
+adding feature: 16 has accuracy of: 76
+adding feature: 17 has accuracy of: 77.3
+adding feature: 18 has accuracy of: 76.5
+adding feature: 19 has accuracy of: 75.3
+adding feature: 22 has accuracy of: 74.7
+adding feature: 25 has accuracy of: 77.7
+adding feature: 28 has accuracy of: 75.9
+adding feature: 29 has accuracy of: 78
+adding feature: 30 has accuracy of: 76.3
+adding feature: 31 has accuracy of: 75.1
+adding feature: 32 has accuracy of: 77.3
+adding feature: 33 has accuracy of: 77.1
+adding feature: 34 has accuracy of: 77.3
+adding feature: 35 has accuracy of: 75.9
+adding feature: 36 has accuracy of: 76.3
+adding feature: 38 has accuracy of: 76.1
+adding feature: 39 has accuracy of: 76.8
+Local max is: 78
+Keeping feature: 29
+
+Iteration: 14. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 
+adding feature: 1 has accuracy of: 76
+adding feature: 2 has accuracy of: 76.1
+adding feature: 3 has accuracy of: 75.9
+adding feature: 4 has accuracy of: 76.6
+adding feature: 5 has accuracy of: 77.4
+adding feature: 7 has accuracy of: 74.6
+adding feature: 8 has accuracy of: 78.1
+adding feature: 9 has accuracy of: 76.8
+adding feature: 10 has accuracy of: 74.5
+adding feature: 11 has accuracy of: 75.2
+adding feature: 14 has accuracy of: 75.8
+adding feature: 16 has accuracy of: 73.6
+adding feature: 17 has accuracy of: 76.2
+adding feature: 18 has accuracy of: 75.7
+adding feature: 19 has accuracy of: 75.7
+adding feature: 22 has accuracy of: 74.6
+adding feature: 25 has accuracy of: 75.3
+adding feature: 28 has accuracy of: 76.7
+adding feature: 30 has accuracy of: 75.9
+adding feature: 31 has accuracy of: 76.4
+adding feature: 32 has accuracy of: 76.3
+adding feature: 33 has accuracy of: 76.5
+adding feature: 34 has accuracy of: 77.2
+adding feature: 35 has accuracy of: 75.3
+adding feature: 36 has accuracy of: 76
+adding feature: 38 has accuracy of: 74.2
+adding feature: 39 has accuracy of: 75.3
+Local max is: 78.1
+Keeping feature: 8
+
+Iteration: 15. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 
+adding feature: 1 has accuracy of: 77.5
+adding feature: 2 has accuracy of: 75.3
+adding feature: 3 has accuracy of: 75.3
+adding feature: 4 has accuracy of: 75.7
+adding feature: 5 has accuracy of: 76.8
+adding feature: 7 has accuracy of: 75.1
+adding feature: 9 has accuracy of: 76.3
+adding feature: 10 has accuracy of: 74.3
+adding feature: 11 has accuracy of: 76.4
+adding feature: 14 has accuracy of: 75.2
+adding feature: 16 has accuracy of: 74.7
+adding feature: 17 has accuracy of: 75.5
+adding feature: 18 has accuracy of: 77.9
+adding feature: 19 has accuracy of: 74.2
+adding feature: 22 has accuracy of: 75.5
+adding feature: 25 has accuracy of: 75.7
+adding feature: 28 has accuracy of: 76
+adding feature: 30 has accuracy of: 77.5
+adding feature: 31 has accuracy of: 77.4
+adding feature: 32 has accuracy of: 76.9
+adding feature: 33 has accuracy of: 76.3
+adding feature: 34 has accuracy of: 76.5
+adding feature: 35 has accuracy of: 76.3
+adding feature: 36 has accuracy of: 75.5
+adding feature: 38 has accuracy of: 74.4
+adding feature: 39 has accuracy of: 75.5
+Local max is: 77.9
+Keeping feature: 18
+
+Iteration: 16. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 
+adding feature: 1 has accuracy of: 75
+adding feature: 2 has accuracy of: 75.6
+adding feature: 3 has accuracy of: 75.8
+adding feature: 4 has accuracy of: 75.6
+adding feature: 5 has accuracy of: 77.8
+adding feature: 7 has accuracy of: 74.9
+adding feature: 9 has accuracy of: 76.5
+adding feature: 10 has accuracy of: 74.1
+adding feature: 11 has accuracy of: 75.2
+adding feature: 14 has accuracy of: 75
+adding feature: 16 has accuracy of: 75.2
+adding feature: 17 has accuracy of: 75.4
+adding feature: 19 has accuracy of: 74.5
+adding feature: 22 has accuracy of: 75.4
+adding feature: 25 has accuracy of: 76
+adding feature: 28 has accuracy of: 75.1
+adding feature: 30 has accuracy of: 75.9
+adding feature: 31 has accuracy of: 76.4
+adding feature: 32 has accuracy of: 75.6
+adding feature: 33 has accuracy of: 75.9
+adding feature: 34 has accuracy of: 75.4
+adding feature: 35 has accuracy of: 75.6
+adding feature: 36 has accuracy of: 76.1
+adding feature: 38 has accuracy of: 74.1
+adding feature: 39 has accuracy of: 74.1
+Local max is: 77.8
+Keeping feature: 5
+
+Iteration: 17. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 
+adding feature: 1 has accuracy of: 74.9
+adding feature: 2 has accuracy of: 74
+adding feature: 3 has accuracy of: 76.1
+adding feature: 4 has accuracy of: 75.5
+adding feature: 7 has accuracy of: 75.5
+adding feature: 9 has accuracy of: 75.5
+adding feature: 10 has accuracy of: 74.5
+adding feature: 11 has accuracy of: 74.5
+adding feature: 14 has accuracy of: 74.3
+adding feature: 16 has accuracy of: 75.3
+adding feature: 17 has accuracy of: 76
+adding feature: 19 has accuracy of: 74.6
+adding feature: 22 has accuracy of: 74.3
+adding feature: 25 has accuracy of: 73.9
+adding feature: 28 has accuracy of: 74.9
+adding feature: 30 has accuracy of: 75
+adding feature: 31 has accuracy of: 75.3
+adding feature: 32 has accuracy of: 76.9
+adding feature: 33 has accuracy of: 75.4
+adding feature: 34 has accuracy of: 75
+adding feature: 35 has accuracy of: 75.7
+adding feature: 36 has accuracy of: 76.7
+adding feature: 38 has accuracy of: 75.3
+adding feature: 39 has accuracy of: 75.1
+Local max is: 76.9
+Keeping feature: 32
+
+Iteration: 18. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 
+adding feature: 1 has accuracy of: 74.9
+adding feature: 2 has accuracy of: 75.2
+adding feature: 3 has accuracy of: 74.4
+adding feature: 4 has accuracy of: 74
+adding feature: 7 has accuracy of: 74.5
+adding feature: 9 has accuracy of: 73.8
+adding feature: 10 has accuracy of: 75.2
+adding feature: 11 has accuracy of: 74.3
+adding feature: 14 has accuracy of: 73.6
+adding feature: 16 has accuracy of: 75
+adding feature: 17 has accuracy of: 74.3
+adding feature: 19 has accuracy of: 74.6
+adding feature: 22 has accuracy of: 73.4
+adding feature: 25 has accuracy of: 73.4
+adding feature: 28 has accuracy of: 75.6
+adding feature: 30 has accuracy of: 74.3
+adding feature: 31 has accuracy of: 74.9
+adding feature: 33 has accuracy of: 74.8
+adding feature: 34 has accuracy of: 74.5
+adding feature: 35 has accuracy of: 74
+adding feature: 36 has accuracy of: 74.1
+adding feature: 38 has accuracy of: 75.3
+adding feature: 39 has accuracy of: 75.4
+Local max is: 75.6
+Keeping feature: 28
+
+Iteration: 19. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 
+adding feature: 1 has accuracy of: 73
+adding feature: 2 has accuracy of: 73.2
+adding feature: 3 has accuracy of: 74.1
+adding feature: 4 has accuracy of: 73.7
+adding feature: 7 has accuracy of: 74.9
+adding feature: 9 has accuracy of: 73.8
+adding feature: 10 has accuracy of: 73.9
+adding feature: 11 has accuracy of: 72.7
+adding feature: 14 has accuracy of: 72.4
+adding feature: 16 has accuracy of: 74.5
+adding feature: 17 has accuracy of: 74.1
+adding feature: 19 has accuracy of: 73
+adding feature: 22 has accuracy of: 73
+adding feature: 25 has accuracy of: 72.4
+adding feature: 30 has accuracy of: 73.9
+adding feature: 31 has accuracy of: 73.2
+adding feature: 33 has accuracy of: 73.2
+adding feature: 34 has accuracy of: 73.4
+adding feature: 35 has accuracy of: 73.4
+adding feature: 36 has accuracy of: 73.2
+adding feature: 38 has accuracy of: 74.8
+adding feature: 39 has accuracy of: 72.7
+Local max is: 74.9
+Keeping feature: 7
+
+Iteration: 20. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 
+adding feature: 1 has accuracy of: 73.7
+adding feature: 2 has accuracy of: 72.1
+adding feature: 3 has accuracy of: 72.8
+adding feature: 4 has accuracy of: 73.9
+adding feature: 9 has accuracy of: 73
+adding feature: 10 has accuracy of: 73.9
+adding feature: 11 has accuracy of: 73.1
+adding feature: 14 has accuracy of: 73.3
+adding feature: 16 has accuracy of: 73.2
+adding feature: 17 has accuracy of: 72.3
+adding feature: 19 has accuracy of: 72.4
+adding feature: 22 has accuracy of: 71.8
+adding feature: 25 has accuracy of: 73.2
+adding feature: 30 has accuracy of: 73
+adding feature: 31 has accuracy of: 71.5
+adding feature: 33 has accuracy of: 73.2
+adding feature: 34 has accuracy of: 70.8
+adding feature: 35 has accuracy of: 71.8
+adding feature: 36 has accuracy of: 72.2
+adding feature: 38 has accuracy of: 72
+adding feature: 39 has accuracy of: 72.5
+Local max is: 73.9
+Keeping feature: 4
+
+Iteration: 21. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 
+adding feature: 1 has accuracy of: 73.4
+adding feature: 2 has accuracy of: 71.9
+adding feature: 3 has accuracy of: 70.9
+adding feature: 9 has accuracy of: 71.4
+adding feature: 10 has accuracy of: 73.5
+adding feature: 11 has accuracy of: 72.7
+adding feature: 14 has accuracy of: 72.7
+adding feature: 16 has accuracy of: 72
+adding feature: 17 has accuracy of: 73.6
+adding feature: 19 has accuracy of: 72.2
+adding feature: 22 has accuracy of: 70.7
+adding feature: 25 has accuracy of: 72.4
+adding feature: 30 has accuracy of: 72.6
+adding feature: 31 has accuracy of: 71.5
+adding feature: 33 has accuracy of: 72.3
+adding feature: 34 has accuracy of: 72.3
+adding feature: 35 has accuracy of: 71
+adding feature: 36 has accuracy of: 71.9
+adding feature: 38 has accuracy of: 72
+adding feature: 39 has accuracy of: 71.3
+Local max is: 73.6
+Keeping feature: 17
+
+Iteration: 22. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 
+adding feature: 1 has accuracy of: 73.4
+adding feature: 2 has accuracy of: 72.7
+adding feature: 3 has accuracy of: 71.3
+adding feature: 9 has accuracy of: 71.7
+adding feature: 10 has accuracy of: 72.7
+adding feature: 11 has accuracy of: 70.8
+adding feature: 14 has accuracy of: 72.3
+adding feature: 16 has accuracy of: 72.2
+adding feature: 19 has accuracy of: 71
+adding feature: 22 has accuracy of: 69.8
+adding feature: 25 has accuracy of: 70.8
+adding feature: 30 has accuracy of: 72.2
+adding feature: 31 has accuracy of: 71.2
+adding feature: 33 has accuracy of: 71.1
+adding feature: 34 has accuracy of: 71.9
+adding feature: 35 has accuracy of: 71.3
+adding feature: 36 has accuracy of: 71.9
+adding feature: 38 has accuracy of: 71.9
+adding feature: 39 has accuracy of: 72.6
+Local max is: 73.4
+Keeping feature: 1
+
+Iteration: 23. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 
+adding feature: 2 has accuracy of: 71.3
+adding feature: 3 has accuracy of: 71.6
+adding feature: 9 has accuracy of: 71.4
+adding feature: 10 has accuracy of: 71.9
+adding feature: 11 has accuracy of: 71
+adding feature: 14 has accuracy of: 71.3
+adding feature: 16 has accuracy of: 71.4
+adding feature: 19 has accuracy of: 72.4
+adding feature: 22 has accuracy of: 70.4
+adding feature: 25 has accuracy of: 70.6
+adding feature: 30 has accuracy of: 70.4
+adding feature: 31 has accuracy of: 71.7
+adding feature: 33 has accuracy of: 72
+adding feature: 34 has accuracy of: 72.7
+adding feature: 35 has accuracy of: 71.1
+adding feature: 36 has accuracy of: 72.2
+adding feature: 38 has accuracy of: 71.9
+adding feature: 39 has accuracy of: 72.2
+Local max is: 72.7
+Keeping feature: 34
+
+Iteration: 24. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 
+adding feature: 2 has accuracy of: 69.1
+adding feature: 3 has accuracy of: 71.5
+adding feature: 9 has accuracy of: 72.2
+adding feature: 10 has accuracy of: 71.9
+adding feature: 11 has accuracy of: 70.9
+adding feature: 14 has accuracy of: 72.3
+adding feature: 16 has accuracy of: 69.8
+adding feature: 19 has accuracy of: 71.7
+adding feature: 22 has accuracy of: 69.6
+adding feature: 25 has accuracy of: 69.7
+adding feature: 30 has accuracy of: 71.2
+adding feature: 31 has accuracy of: 69.7
+adding feature: 33 has accuracy of: 70.1
+adding feature: 35 has accuracy of: 69.3
+adding feature: 36 has accuracy of: 71.3
+adding feature: 38 has accuracy of: 71.3
+adding feature: 39 has accuracy of: 70.8
+Local max is: 72.3
+Keeping feature: 14
+
+Iteration: 25. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 
+adding feature: 2 has accuracy of: 69.7
+adding feature: 3 has accuracy of: 70.9
+adding feature: 9 has accuracy of: 70.7
+adding feature: 10 has accuracy of: 70.4
+adding feature: 11 has accuracy of: 70.6
+adding feature: 16 has accuracy of: 70.5
+adding feature: 19 has accuracy of: 72
+adding feature: 22 has accuracy of: 69.2
+adding feature: 25 has accuracy of: 70.4
+adding feature: 30 has accuracy of: 70.8
+adding feature: 31 has accuracy of: 69
+adding feature: 33 has accuracy of: 70.5
+adding feature: 35 has accuracy of: 70.5
+adding feature: 36 has accuracy of: 69.6
+adding feature: 38 has accuracy of: 69.7
+adding feature: 39 has accuracy of: 68.6
+Local max is: 72
+Keeping feature: 19
+
+Iteration: 26. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 
+adding feature: 2 has accuracy of: 71
+adding feature: 3 has accuracy of: 71.9
+adding feature: 9 has accuracy of: 70.6
+adding feature: 10 has accuracy of: 70.5
+adding feature: 11 has accuracy of: 70.4
+adding feature: 16 has accuracy of: 70.9
+adding feature: 22 has accuracy of: 69.2
+adding feature: 25 has accuracy of: 70.7
+adding feature: 30 has accuracy of: 71.5
+adding feature: 31 has accuracy of: 71
+adding feature: 33 has accuracy of: 71.5
+adding feature: 35 has accuracy of: 69.8
+adding feature: 36 has accuracy of: 70.1
+adding feature: 38 has accuracy of: 69.9
+adding feature: 39 has accuracy of: 68.6
+Local max is: 71.9
+Keeping feature: 3
+
+Iteration: 27. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 
+adding feature: 2 has accuracy of: 70.4
+adding feature: 9 has accuracy of: 70.2
+adding feature: 10 has accuracy of: 70.5
+adding feature: 11 has accuracy of: 69.7
+adding feature: 16 has accuracy of: 71.6
+adding feature: 22 has accuracy of: 70.1
+adding feature: 25 has accuracy of: 68.9
+adding feature: 30 has accuracy of: 70.6
+adding feature: 31 has accuracy of: 70
+adding feature: 33 has accuracy of: 70.7
+adding feature: 35 has accuracy of: 70.4
+adding feature: 36 has accuracy of: 69.9
+adding feature: 38 has accuracy of: 71.8
+adding feature: 39 has accuracy of: 69.7
+Local max is: 71.8
+Keeping feature: 38
+
+Iteration: 28. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 
+adding feature: 2 has accuracy of: 69.9
+adding feature: 9 has accuracy of: 70.7
+adding feature: 10 has accuracy of: 70.1
+adding feature: 11 has accuracy of: 69.1
+adding feature: 16 has accuracy of: 71
+adding feature: 22 has accuracy of: 70.2
+adding feature: 25 has accuracy of: 69.4
+adding feature: 30 has accuracy of: 69.6
+adding feature: 31 has accuracy of: 69
+adding feature: 33 has accuracy of: 70.2
+adding feature: 35 has accuracy of: 71
+adding feature: 36 has accuracy of: 70
+adding feature: 39 has accuracy of: 70.5
+Local max is: 71
+Keeping feature: 16
+
+Iteration: 29. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 
+adding feature: 2 has accuracy of: 70
+adding feature: 9 has accuracy of: 69.8
+adding feature: 10 has accuracy of: 69.6
+adding feature: 11 has accuracy of: 68.5
+adding feature: 22 has accuracy of: 69.4
+adding feature: 25 has accuracy of: 69.4
+adding feature: 30 has accuracy of: 69.9
+adding feature: 31 has accuracy of: 70
+adding feature: 33 has accuracy of: 68.8
+adding feature: 35 has accuracy of: 69.7
+adding feature: 36 has accuracy of: 69.7
+adding feature: 39 has accuracy of: 68.7
+Local max is: 70
+Keeping feature: 2
+
+Iteration: 30. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 
+adding feature: 9 has accuracy of: 69.7
+adding feature: 10 has accuracy of: 69
+adding feature: 11 has accuracy of: 68.5
+adding feature: 22 has accuracy of: 68.7
+adding feature: 25 has accuracy of: 69.4
+adding feature: 30 has accuracy of: 68.3
+adding feature: 31 has accuracy of: 68.2
+adding feature: 33 has accuracy of: 69.1
+adding feature: 35 has accuracy of: 70.8
+adding feature: 36 has accuracy of: 68.7
+adding feature: 39 has accuracy of: 68.3
+Local max is: 70.8
+Keeping feature: 35
+
+Iteration: 31. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 
+adding feature: 9 has accuracy of: 69
+adding feature: 10 has accuracy of: 71.1
+adding feature: 11 has accuracy of: 69.7
+adding feature: 22 has accuracy of: 69
+adding feature: 25 has accuracy of: 69.1
+adding feature: 30 has accuracy of: 68.4
+adding feature: 31 has accuracy of: 69.1
+adding feature: 33 has accuracy of: 70
+adding feature: 36 has accuracy of: 67.8
+adding feature: 39 has accuracy of: 67.7
+Local max is: 71.1
+Keeping feature: 10
+
+Iteration: 32. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 
+adding feature: 9 has accuracy of: 69.7
+adding feature: 11 has accuracy of: 70.2
+adding feature: 22 has accuracy of: 70.4
+adding feature: 25 has accuracy of: 68.7
+adding feature: 30 has accuracy of: 69.5
+adding feature: 31 has accuracy of: 69.2
+adding feature: 33 has accuracy of: 69.1
+adding feature: 36 has accuracy of: 68
+adding feature: 39 has accuracy of: 68.2
+Local max is: 70.4
+Keeping feature: 22
+
+Iteration: 33. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 
+adding feature: 9 has accuracy of: 68.3
+adding feature: 11 has accuracy of: 69.4
+adding feature: 25 has accuracy of: 68.9
+adding feature: 30 has accuracy of: 68.7
+adding feature: 31 has accuracy of: 69.5
+adding feature: 33 has accuracy of: 69.4
+adding feature: 36 has accuracy of: 67.6
+adding feature: 39 has accuracy of: 68.3
+Local max is: 69.5
+Keeping feature: 31
+
+Iteration: 34. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 
+adding feature: 9 has accuracy of: 68.4
+adding feature: 11 has accuracy of: 69.5
+adding feature: 25 has accuracy of: 68.9
+adding feature: 30 has accuracy of: 67.8
+adding feature: 33 has accuracy of: 68.1
+adding feature: 36 has accuracy of: 66.6
+adding feature: 39 has accuracy of: 68.2
+Local max is: 69.5
+Keeping feature: 11
+
+Iteration: 35. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 11 
+adding feature: 9 has accuracy of: 69.5
+adding feature: 25 has accuracy of: 68.6
+adding feature: 30 has accuracy of: 68.4
+adding feature: 33 has accuracy of: 68.6
+adding feature: 36 has accuracy of: 67.1
+adding feature: 39 has accuracy of: 68.5
+Local max is: 69.5
+Keeping feature: 9
+
+Iteration: 36. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 11 9 
+adding feature: 25 has accuracy of: 67.3
+adding feature: 30 has accuracy of: 68.2
+adding feature: 33 has accuracy of: 69.4
+adding feature: 36 has accuracy of: 68.1
+adding feature: 39 has accuracy of: 67.6
+Local max is: 69.4
+Keeping feature: 33
+
+Iteration: 37. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 11 9 33 
+adding feature: 25 has accuracy of: 68.7
+adding feature: 30 has accuracy of: 68.9
+adding feature: 36 has accuracy of: 68.4
+adding feature: 39 has accuracy of: 67.6
+Local max is: 68.9
+Keeping feature: 30
+
+Iteration: 38. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 11 9 33 30 
+adding feature: 25 has accuracy of: 69.5
+adding feature: 36 has accuracy of: 68.8
+adding feature: 39 has accuracy of: 69.4
+Local max is: 69.5
+Keeping feature: 25
+
+Iteration: 39. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 11 9 33 30 25 
+adding feature: 36 has accuracy of: 68.6
+adding feature: 39 has accuracy of: 68.3
+Local max is: 68.6
+Keeping feature: 36
+
+Iteration: 40. Searching over features: 20 26 15 23 21 37 40 24 6 27 13 12 29 8 18 5 32 28 7 4 17 1 34 14 19 3 38 16 2 35 10 22 31 11 9 33 30 25 36 
+adding feature: 39 has accuracy of: 68.3
+Local max is: 68.3
+Keeping feature: 39
+
+Best features are: 20 26 
+With accuracy of: 96.7
