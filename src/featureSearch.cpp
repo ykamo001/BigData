@@ -496,7 +496,8 @@ int main()
 	while(file >> hold)	//while there are still numbers left in the file, keep taking them
 	{
 		hold = hold.substr(0,9);
-		double temp = stod(hold);		//converts the string into a double, which is the type we need to store the data
+		//double temp = stod(hold);		//converts the string into a double, which is the type we need to store the data
+		double temp = atof(hold.c_str());
 		columns.push_back(temp);
 		counter--;
 		if(counter == 0)
