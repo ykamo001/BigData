@@ -1,7 +1,7 @@
 # featureSearch
 featureSearch is an artificial intelligence program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
-##Installing and Running
+## Installing and Running
 To get featureSearch and run it, please open up a terminal and run these commands:
 ```
 git clone https://github.com/ykamo001/featureSearch.git
@@ -148,7 +148,7 @@ With accuracy of: 91
 
 There are more test run reports in the [reports](https://github.com/ykamo001/featureSearch/tree/master/reports) directory.
 
-##Findings
+## Findings
 The datasets that pertained to me were for number 29. 
 For the small file, the features that were useful were 6 and 2, with an accuracy of about 91%.
 For the big file, the features that were useful were 20 and 26, with an accuracy of about 96.7%.
