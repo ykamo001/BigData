@@ -1,13 +1,13 @@
-# featureSearch
-featureSearch is an artificial intelligence program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
+# Optimizer
+Optimizer is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
 ## Installing and Running
-To get featureSearch and run it, please open up a terminal and run these commands:
+To get Optimizer and run it, please open up a terminal and run these commands:
 ```
-git clone https://github.com/ykamo001/featureSearch.git
-cd featureSearch/
+git clone https://github.com/ykamo001/Optimizer.git
+cd Optimizer/
 make
-./src/featureSearch.out
+./src/Optimizer.out
 ```
 
 
