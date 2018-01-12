@@ -1,17 +1,20 @@
-# Optimizer
-Optimizer is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
+# BigData
+BigData is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
 ## Installing and Running
 To get Optimizer and run it, please open up a terminal and run these commands:
 ```
-git clone https://github.com/ykamo001/Optimizer.git
-cd Optimizer/
+git clone https://github.com/ykamo001/BigData.git
+cd BigData/
 make
-./src/Optimizer.out
+./bin/optimizer.out /data/small29.txt 3
 ```
 
 
-Upon starting the program, it will ask you to enter the file that you would like to extrapolate data from; the data file should be in the following format:
+To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish you run.
+
+
+The data file should be in the following format:
 ```
 2.0000000e+000  3.7080561e+000  3.0881362e+000  3.9684531e+000  3.6831232e+000  2.2850047e+000  2.9306701e+000  3.3161311e+000  3.1059884e+000  1.5443204e+000  3.9985351e+000
 2.0000000e+000  2.8351111e+000  2.0471785e+000  3.5527371e+000  2.1615776e+000  2.0369645e+000  3.8633820e+000  2.0810766e+000  3.8470717e+000  3.8408205e+000  5.0040198e+000
@@ -21,10 +24,10 @@ Upon starting the program, it will ask you to enter the file that you would like
 
 ```
 where the first column is the classification, which in this case is either 1 or 2, and the rest of the columns are the feature data.
-I have kept some files in the [src](https://github.com/ykamo001/featureSearch/tree/master/src) directory for reference.
+I have kept some files in the [src](https://github.com/ykamo001/BigData/tree/master/data) directory for reference.
 
 
-Once the data has been extracted, it will [normalize](https://en.wikipedia.org/wiki/Feature_scaling) the data, and then ask to choose between 3 search algorithms.
+Once the data has been extracted, it will [normalize](https://en.wikipedia.org/wiki/Feature_scaling) the data, and and use on the three algorithms that was selected.
 
 The 3 algorithms you can choose from are:
 
@@ -38,14 +41,7 @@ The program will finish, listing the features to combine that will classify with
 
 Let's take a look at some of the sample data test runs:
 ```
-Please enter the file you would like to extrapolate information from: src/small29.txt
 Normalizing data, please wait..
-
-Please select the search routine you would like to implement: 
-1. Forward Search
-2. Backward Search
-3. Custom Search
-option:1
 
 Iteration: 1. Searching over features: 
 adding feature: 1 has accuracy of: 66
@@ -146,7 +142,7 @@ Best features are: 6 2
 With accuracy of: 91
 ```
 
-There are more test run reports in the [reports](https://github.com/ykamo001/featureSearch/tree/master/reports) directory.
+There are more test run reports in the [reports](https://github.com/ykamo001/BigData/tree/master/reports) directory.
 
 ## Findings
 The datasets that pertained to me were for number 29. 
