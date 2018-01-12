@@ -7,11 +7,11 @@ To get Optimizer and run it, please open up a terminal and run these commands:
 git clone https://github.com/ykamo001/BigData.git
 cd BigData/
 make
-./bin/optimizer.out /data/small29.txt 3
+./bin/optimizer.out ./data/small29.txt 3
 ```
 
 
-To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish you run.
+To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish to use.
 
 
 The data file should be in the following format:

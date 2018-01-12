@@ -482,7 +482,7 @@ int main(int argc, char **argv)
 		}
 		file.close();	//close file since we no longer need it
 
-		cout << "Normalizing data, please wait.." << endl;
+		cout << "Normalizing data, please wait.." << endl << endl;
 		normalize(rows);	//normalize the data
 
 		vector<int> rfeat;
@@ -521,7 +521,7 @@ int main(int argc, char **argv)
 			cout << "That is an invalid option, goodbye" << endl;
 		}
 	}
-	else{
+	else if(argc < 3){
 		cout << "Not enough arguments. ";
 		cout << "Please also enter the file from which to extract data, and which algorithm to use." << endl;
 	}
