@@ -6,16 +6,17 @@
 #include <stdlib.h>
 #include <iomanip>
 #include <math.h>
+#include <sstream>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
 int k_fold_size(int matrixSize)		//this function will determine the size of K for K fold
 {
 	int k = 10;			//starts off at 10, and goes higher if it does not divide perfectly
-	if(matrixSize % k != 0)
-	{
-		while((matrixSize % k != 0) && (k > 0))
-		{
+	if(matrixSize % k != 0){
+		while((matrixSize % k != 0) && (k > 0)){
 			k--;
 		}		//stop when it finally divides perfectly
 	}
@@ -49,12 +50,10 @@ void fix(vector<vector<double> > &neighbors, double dist, double qual)		//will b
 		}
 		else			//if we do not find any, stop looking
 		{
-			if(i+1 < neighbors.size())
-			{
+			if(i+1 < neighbors.size()){
 				++i;
 			}
-			else
-			{
+			else{
 				done = true;
 			}
 		}
@@ -178,7 +177,7 @@ void k_fold_neigh(vector<vector<double> > &hold, vector<vector<double> > &test, 
 	}
 }
 
-double cross_validation(vector<vector<double> > matrix, int opt)		//sets up the k-fold process by dividing the data into parts
+double cross_validation(vector<vector<double> > matrix, char opt)		//sets up the k-fold process by dividing the data into parts
 {
 	int k = k_fold_size(matrix.size());
 	int iter = matrix.size() / k;
@@ -194,16 +193,14 @@ double cross_validation(vector<vector<double> > matrix, int opt)		//sets up the 
 		for(int j = 0; j < matrix.size(); ++j)		//get the correct section to test
 		{
 			temp = matrix.at(j);
-			if((j >= start) && (j <= stop))
-			{
+			if((j >= start) && (j <= stop)){
 				test.push_back(temp);
 			}
-			else
-			{
+			else{
 				hold.push_back(temp);
 			}
 		}
-		if(opt == 1)		//for forward search and backward search
+		if(opt == '1')		//for forward search and backward search
 		{
 			k_fold(hold, test, correct, tested);
 		}
@@ -221,51 +218,44 @@ double cross_validation(vector<vector<double> > matrix, int opt)		//sets up the 
 }
 
 void normalize(vector<vector<double> > &matrix)		//function will normalize data between 0 and 1
-{			//simply (xi - mean(x)) / std(x)
-	int column = 1;
-	vector<double> temp = matrix.at(0);
-	int stop = temp.size();
-	temp.clear();
-	double count = 0.0;
-	double average = 0.0;
-	vector<double> variance;
-	double devi = 0.0;
+{	//simply (xi - mean(x)) / std(x)
+	int stop = matrix.at(0).size();
+	double count = 0.0;	//used for arithmetic and holding values
+	double average = 0.0;	//used for mean(x)
+	double devi = 0.0;	//used to hold the deviation
+	double variance = 0.0;
 	for(int i = 1; i < stop; ++i)
 	{
 		for(int j = 0; j < matrix.size(); ++j)
 		{
-			temp = matrix.at(j);
-			count = count + temp.at(column);
+			count += matrix.at(j).at(i);	//find total of each feature/column
 		}
-		average = count/(static_cast<double>(matrix.size()));
+		average = count/(static_cast<double>(matrix.size()));	//get the average
 		count = 0.0;
 		for(int j = 0; j < matrix.size(); ++j)
-		{
-			temp = matrix.at(j);
-			count = temp.at(column) - average;
-			count = count*count;
-			variance.push_back(count);
+		{	//calculate the varianvce and hold the values
+			count = matrix.at(j).at(i) - average;
+			count *= count;
+			variance += count;
+			//variance.push_back(count);
 		}
 		count = 0.0;
-		for(int j = 0; j < variance.size(); ++j)
+		/*for(int j = 0; j < variance.size(); ++j)
 		{
-			count = count + variance.at(j);
+			count += variance.at(j);
 		}
-		devi = count/(static_cast<double>(variance.size()));
+		devi = count/(static_cast<double>(variance.size()));*/
+		devi = variance/(static_cast<double>(matrix.size()));
 		devi = sqrt(devi);
-		count = 0.0;
 		for(int j = 0; j < matrix.size(); ++j)
 		{
-			temp = matrix.at(j);
-			count = temp.at(column);
-			temp.at(column) = ((count - average)/devi);
-			matrix.at(j) = temp;
+			count = matrix.at(j).at(i);
+			matrix.at(j).at(i) = ((count - average)/devi);
 		}
-		variance.clear();
+		variance = 0.0;
 		count = 0.0;
 		devi = 0.0;
 		average = 0.0;
-		column++;
 	}
 }
 
@@ -325,7 +315,7 @@ void remover(vector<vector<double> > &deter_list,  vector<vector<double> > matri
 	}
 }
 
-void forward_search(vector<vector<double> > &matrix, vector<int> &best_features, double &best_acc, int opt)
+void forward_search(vector<vector<double> > &matrix, vector<int> &best_features, double &best_acc, char opt)
 {			//the forward search
 	vector<int> index_features;
 	vector<vector<double> > current_list;
@@ -469,94 +459,71 @@ void backward_search(vector<vector<double> > &matrix, vector<int> &best_features
 	}
 }
 
-int main()
+int main(int argc, char **argv)
 {
-	vector<double> columns; //will hold all the columns/features
-	vector<vector<double> > rows;	//will hold all the rows/instances
-	string input;			//get the input file name that has all the data
-	cout << "Please enter the file you would like to extrapolate information from: ";
-	cin >> input;
+	if(argc == 3){	//only run if the enter the arguments of file name and algorithm option
 
-	int feat = 0;	//we will open the file and determine how many features it has by counting e's
-	ifstream file;
-	file.open(input.c_str());
-	string hold;
-	getline(file, hold);
-	for(int i = 0; i < hold.size(); ++i)
-	{
-		if(hold.at(i) == 'e')
-		{
-			feat++;
-		}
-	}
-	file.close();	//close the file because we want to start back at the first line of the file
+		vector<double> columns; //will hold all the columns/features
+		vector<vector<double> > rows;	//will hold all the rows/instances
 
-	file.open(input.c_str());
-	int counter = feat;		//counter will help us create the matrix, which determines the columns
-	while(file >> hold)	//while there are still numbers left in the file, keep taking them
-	{
-		hold = hold.substr(0,9);
-		//double temp = stod(hold);		//converts the string into a double, which is the type we need to store the data
-		double temp = atof(hold.c_str());
-		columns.push_back(temp);
-		counter--;
-		if(counter == 0)
-		{
-			rows.push_back(columns);
+		ifstream file;
+		file.open(argv[1]);
+		string hold = "", subs = "";	//used for holding the lines fo the file and for parsing strings
+		double num = 0.0;
+		while(getline(file, hold)){	//pull all the data from the file
+			istringstream iss(hold);
+			while(iss){	//parse the string by space
+				iss >> subs;
+				num = atof(subs.c_str());	//convert the string into a double
+				columns.push_back(num);	//save each feature 
+			}
+			rows.push_back(columns);	//go onto the next line and save the line as an instance of a row
 			columns.clear();
-			counter = feat;
+		}
+		file.close();	//close file since we no longer need it
+
+		cout << "Normalizing data, please wait.." << endl;
+		normalize(rows);	//normalize the data
+
+		vector<int> rfeat;
+		double racc = 0.0;
+		if(*argv[2] == '1'){
+			forward_search(rows, rfeat, racc, *argv[2]);
+			cout << "Best features are: ";
+			for(int i = 0; i < rfeat.size(); ++i)
+			{
+				cout << rfeat.at(i) << " ";
+			}
+			cout << endl;
+			cout << "With accuracy of: " << setprecision(10) << racc << endl;
+		}
+		else if(*argv[2] == '2'){	
+			backward_search(rows, rfeat, racc);
+			cout << "Best features are: ";
+			for(int i = 0; i < rfeat.size(); ++i)
+			{
+				cout << rfeat.at(i) << " ";
+			}
+			cout << endl;
+			cout << "With accuracy of: " << setprecision(10) << racc << endl;
+		}
+		else if(*argv[2] == '3'){
+			forward_search(rows, rfeat, racc, *argv[2]);
+			cout << "Best features are: ";
+			for(int i = 0; i < rfeat.size(); ++i)
+			{
+				cout << rfeat.at(i) << " ";
+			}
+			cout << endl;
+			cout << "With accuracy of: " << setprecision(10) << racc << endl;
+		}
+		else{
+			cout << "That is an invalid option, goodbye" << endl;
 		}
 	}
-	file.close();
-	cout << "Normalizing data, please wait.." << endl;
-	normalize(rows);
-	vector<int> rfeat;
-	double racc = 0.0;
-	cout << endl;
-	int option = 0;			//GUI to pick algorithm of choice
-	cout << "Please select the search routine you would like to implement: " << endl;
-	cout << "1. Forward Search" << endl;
-	cout << "2. Backward Search" << endl;
-	cout << "3. Custom Search" << endl;
-	cout << "option: ";
-	cin >> option;
-	cout << endl;
-	if(option == 1)
-	{
-		forward_search(rows, rfeat, racc, option);
-		cout << "Best features are: ";
-		for(int i = 0; i < rfeat.size(); ++i)
-		{
-			cout << rfeat.at(i) << " ";
-		}
-		cout << endl;
-		cout << "With accuracy of: " << setprecision(10) << racc << endl;
-	}
-	else if(option == 2)
-	{	
-		backward_search(rows, rfeat, racc);
-		cout << "Best features are: ";
-		for(int i = 0; i < rfeat.size(); ++i)
-		{
-			cout << rfeat.at(i) << " ";
-		}
-		cout << endl;
-		cout << "With accuracy of: " << setprecision(10) << racc << endl;
-	}
-	else if(option == 3)
-	{
-		forward_search(rows, rfeat, racc, option);
-		cout << "Best features are: ";
-		for(int i = 0; i < rfeat.size(); ++i)
-		{
-			cout << rfeat.at(i) << " ";
-		}
-		cout << endl;
-		cout << "With accuracy of: " << setprecision(10) << racc << endl;
-	}
-	else
-	{
-		cout << "That is an invalid option, goodbye" << endl;
+	else{
+		cout << "Not enough arguments. ";
+		cout << "Please also enter the file from which to extract data, and which algorithm to use." << endl;
 	}
 	return 0;
 }

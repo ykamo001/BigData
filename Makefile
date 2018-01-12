@@ -1,3 +1,2 @@
 all:
-	g++ src/featureSearch.cpp -o src/featureSearch.out
-
+	g++ src/optimizer.cpp -o bin/optimizer.out
