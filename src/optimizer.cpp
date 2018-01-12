@@ -31,13 +31,10 @@ void fix(vector<vector<double> > &neighbors, double dist, double qual)		//will b
 	vector<double> temp2;
 	double nDist = dist;
 	double nQual = qual;
-	while(!done)		//keep doing so until we manually tell it to stop
-	{
+	while(!done) {	//keep doing so until we manually tell it to stop
 		temp = neighbors.at(i);
-		if(dist < temp.at(1))		//if we find that the new distance we found is smaller than the ones we already have
-		{
-			for(int j = i; j < neighbors.size(); ++j)		//then we simply insert it into the proper location
-			{
+		if(dist < temp.at(1)) {		//if we find that the new distance we found is smaller than the ones we already have
+			for(int j = i; j < neighbors.size(); ++j)	{	//then we simply insert it into the proper location
 				temp = neighbors.at(j);
 				temp2 = temp;
 				temp.at(0) = nQual;
@@ -48,8 +45,7 @@ void fix(vector<vector<double> > &neighbors, double dist, double qual)		//will b
 			}
 			done = true;
 		}
-		else			//if we do not find any, stop looking
-		{
+		else {	//if we do not find any, stop looking
 			if(i+1 < neighbors.size()){
 				++i;
 			}
@@ -64,23 +60,20 @@ void validate(double qual, vector<vector<double> > neighbors, double &correct, d
 {								//what the nearest neighbors think the point is
 	vector<double> temp;			//and if it is correct, we note that
 	int pred = 0;
-	for(int i = 0; i < neighbors.size(); ++i)	//check how many neighbors think the point is what the actual point is
-	{
+	for(int i = 0; i < neighbors.size(); ++i) { //check how many neighbors think the point is what the actual point is
 		temp = neighbors.at(i);
-		if(qual == temp.at(0))
-		{
+		if(qual == temp.at(0)) {
 			pred++;
 		}
 	}
-	if(pred > 1)		//if the majority of the neighbors think he is his actual qualifier, mark this as correct guess
-	{
+	if(pred > 1) {		//if the majority of the neighbors think he is his actual qualifier, mark this as correct guess
 		correct++;
 	}
 	tested++;
 }
 
 void k_fold(vector<vector<double> > &hold, vector<vector<double> > &test, double &correct, double &tested)
-{		//used to conduct k-fold and nearest neighbor algorithm
+{	//used to conduct k-fold and nearest neighbor algorithm
 	vector<double> currentTest;
 	vector<double> currentHold;
 	double dist = 0.0;
@@ -88,33 +81,29 @@ void k_fold(vector<vector<double> > &hold, vector<vector<double> > &test, double
 	vector<double> distTemp;
 	double minDist = 100.0;
 	double minQual = 100.0;
-	for(int i = 0; i < test.size(); ++i)	//this is where we will conduct the nearest neighbor algorithm 
-	{
+	for(int i = 0; i < test.size(); ++i) { //this is where we will conduct the nearest neighbor algorithm 
 		currentTest = test.at(i);
-		for(int j = 0; j < hold.size(); ++j)
-		{
+		for(int j = 0; j < hold.size(); ++j) {
 			currentHold = hold.at(j);
-			for(int k = 1; k < currentTest.size(); ++k)		//use distance formula, eucledian like
-			{	//square root of (x1-x2)^2 + (y1-y2)^2 + ....
+			for(int k = 1; k < currentTest.size(); ++k)	{
+				//use distance formula, eucledian like
+				//square root of (x1-x2)^2 + (y1-y2)^2 + ....
 				temp = currentTest.at(k) - currentHold.at(k);
 				temp = temp*temp;
 				distTemp.push_back(temp);
 			}
-			for(int l = 0; l < distTemp.size(); ++l)
-			{
+			for(int l = 0; l < distTemp.size(); ++l) {
 				dist += distTemp.at(l);
 			}
 			distTemp.clear();
 			dist = sqrt(dist);
-			if(dist < minDist)			//keep track of what the nearest neighbor is
-			{
+			if(dist < minDist)	{		//keep track of what the nearest neighbor is
 				minDist = dist;
 				minQual = currentHold.at(0);
 			}
 			dist = 0.0;
 		}
-		if(minQual == currentTest.at(0))	//if the nearest neighbor thinks the point is actually what the point is, then correct
-		{
+		if(minQual == currentTest.at(0)) {	//if the nearest neighbor thinks the point is actually what the point is, then correct
 			correct++;
 		}
 		tested++;
@@ -136,25 +125,20 @@ void k_fold_neigh(vector<vector<double> > &hold, vector<vector<double> > &test, 
 	vector<vector<double> > neighbors;
 	distTemp.push_back(10.0);		//initialize the neighbors to junk value
 	distTemp.push_back(100.0);
-	for(int q = 0; q < 3; ++q)		//we will ask 3 neighbors
-	{
+	for(int q = 0; q < 3; ++q)	{	//we will ask 3 neighbors
 		neighbors.push_back(distTemp);
 	}
 	distTemp.clear();
-	for(int i = 0; i < test.size(); ++i)	//this is where we will conduct the nearest neighbor algorithm 
-	{
+	for(int i = 0; i < test.size(); ++i) {	//this is where we will conduct the nearest neighbor algorithm 
 		currentTest = test.at(i);
-		for(int j = 0; j < hold.size(); ++j)
-		{
+		for(int j = 0; j < hold.size(); ++j) {
 			currentHold = hold.at(j);
-			for(int k = 1; k < currentTest.size(); ++k)	//use distance algorithm, just like forward search
-			{
+			for(int k = 1; k < currentTest.size(); ++k) { //use distance algorithm, just like forward search
 				temp = currentTest.at(k) - currentHold.at(k);
 				temp = temp*temp;
 				distTemp.push_back(temp);
 			}
-			for(int l = 0; l < distTemp.size(); ++l)
-			{
+			for(int l = 0; l < distTemp.size(); ++l) {
 				dist += distTemp.at(l);
 			}
 			distTemp.clear();
@@ -169,8 +153,7 @@ void k_fold_neigh(vector<vector<double> > &hold, vector<vector<double> > &test, 
 		neighbors.clear();
 		distTemp.push_back(10.0);		
 		distTemp.push_back(100.0);
-		for(int q = 0; q < 3; ++q)		
-		{
+		for(int q = 0; q < 3; ++q)	{
 			neighbors.push_back(distTemp);
 		}
 		distTemp.clear();
@@ -188,10 +171,8 @@ double cross_validation(vector<vector<double> > matrix, char opt)		//sets up the
 	vector<vector<double> > hold;
 	vector<vector<double> > test;
 	vector<double> temp;
-	for(int i = 0; i < k; ++i)			//must do k-fold k times
-	{
-		for(int j = 0; j < matrix.size(); ++j)		//get the correct section to test
-		{
+	for(int i = 0; i < k; ++i) {			//must do k-fold k times
+		for(int j = 0; j < matrix.size(); ++j)	{	//get the correct section to test
 			temp = matrix.at(j);
 			if((j >= start) && (j <= stop)){
 				test.push_back(temp);
@@ -200,12 +181,10 @@ double cross_validation(vector<vector<double> > matrix, char opt)		//sets up the
 				hold.push_back(temp);
 			}
 		}
-		if(opt == '1')		//for forward search and backward search
-		{
+		if(opt == '1')	{	//for forward search and backward search
 			k_fold(hold, test, correct, tested);
 		}
-		else	//only for custom search
-		{
+		else {	//only for custom search
 			k_fold_neigh(hold, test, correct, tested);
 		}
 		double perc = correct/tested;
@@ -224,31 +203,22 @@ void normalize(vector<vector<double> > &matrix)		//function will normalize data 
 	double average = 0.0;	//used for mean(x)
 	double devi = 0.0;	//used to hold the deviation
 	double variance = 0.0;
-	for(int i = 1; i < stop; ++i)
-	{
-		for(int j = 0; j < matrix.size(); ++j)
-		{
+	for(int i = 1; i < stop; ++i) {
+		for(int j = 0; j < matrix.size(); ++j) {
 			count += matrix.at(j).at(i);	//find total of each feature/column
 		}
 		average = count/(static_cast<double>(matrix.size()));	//get the average
 		count = 0.0;
-		for(int j = 0; j < matrix.size(); ++j)
-		{	//calculate the varianvce and hold the values
+		for(int j = 0; j < matrix.size(); ++j) {	//calculate the varianvce and hold the values
 			count = matrix.at(j).at(i) - average;
 			count *= count;
 			variance += count;
 			//variance.push_back(count);
 		}
 		count = 0.0;
-		/*for(int j = 0; j < variance.size(); ++j)
-		{
-			count += variance.at(j);
-		}
-		devi = count/(static_cast<double>(variance.size()));*/
 		devi = variance/(static_cast<double>(matrix.size()));
 		devi = sqrt(devi);
-		for(int j = 0; j < matrix.size(); ++j)
-		{
+		for(int j = 0; j < matrix.size(); ++j) {
 			count = matrix.at(j).at(i);
 			matrix.at(j).at(i) = ((count - average)/devi);
 		}
@@ -261,10 +231,8 @@ void normalize(vector<vector<double> > &matrix)		//function will normalize data 
 
 bool checker(vector<int> index_features, int index)		//checks for if the current feature is in the vector
 {
-	for(int i = 0; i < index_features.size(); ++i)
-	{
-		if(index_features.at(i) == index)
-		{
+	for(int i = 0; i < index_features.size(); ++i) {
+		if(index_features.at(i) == index) {
 			return true;
 		}
 	}
@@ -275,8 +243,7 @@ void adder(vector<vector<double> > &deter_list, const vector<vector<double> > &m
 {			//adds the proper features to our searching matrix
 	vector<double> temp;
 	vector<double> temp2;
-	for(int i = 0; i < matrix.size(); ++i)
-	{
+	for(int i = 0; i < matrix.size(); ++i) {
 		temp = matrix.at(i);
 		temp2 = deter_list.at(i);
 		temp2.push_back(temp.at(j));
@@ -289,22 +256,16 @@ void remover(vector<vector<double> > &deter_list,  vector<vector<double> > matri
 	vector<double> temp;
 	vector<double> temp2;
 	bool used = false;
-	for(int i = 0; i < matrix.size(); ++i)
-	{
+	for(int i = 0; i < matrix.size(); ++i) {
 		temp = matrix.at(i);
-		for(int k = 0; k < temp.size(); ++k)
-		{
-			if(k == 0)
-			{
+		for(int k = 0; k < temp.size(); ++k) {
+			if(k == 0) {
 				temp2.push_back(temp.at(k));
 			}
-			else
-			{
-				if(k != j)
-				{
+			else{
+				if(k != j) {
 					used = checker(features, k);
-					if(used)
-					{
+					if(used) {
 						temp2.push_back(temp.at(k));
 					}
 				}
@@ -326,8 +287,7 @@ void forward_search(vector<vector<double> > &matrix, vector<int> &best_features,
 	vector<double> pusher;
 	double curr_acc = 0.0;
 	double local_acc = 0.0;
-	for(int i = 0; i < matrix.size(); ++i)		//sets up initialization
-	{
+	for(int i = 0; i < matrix.size(); ++i)	{	//sets up initialization
 		temp = matrix.at(i);
 		pusher.push_back(temp.at(0));
 		current_list.push_back(pusher);
@@ -335,36 +295,29 @@ void forward_search(vector<vector<double> > &matrix, vector<int> &best_features,
 	}
 	int stop = matrix.at(0).size();
 	bool used = false;
-	for(int i = 1; i < stop; ++i)		//we iterate as many times as how many features we have
-	{
+	for(int i = 1; i < stop; ++i) {		//we iterate as many times as how many features we have
 		cout << "Iteration: " << i << ". Searching over features: ";
-		for(int z = 0; z < index_features.size(); ++z)
-		{
+		for(int z = 0; z < index_features.size(); ++z) {
 			cout << index_features.at(z) << " ";
 		}
 		cout << endl;
-		for(int j = 1; j < stop; ++j)
-		{
+		for(int j = 1; j < stop; ++j) {
 			deter_list = current_list;
 			used = checker(index_features, j);
-			if(!used)			//proceed by adding one feature at a time that we havent used yet in each level
-			{
+			if(!used) {		//proceed by adding one feature at a time that we havent used yet in each level
 				cout << "adding feature: " << j;
 				adder(deter_list, matrix, j);
 				curr_acc = cross_validation(deter_list, opt);
 				cout << " has accuracy of: " << setprecision(10) << curr_acc << endl;
-				if(curr_acc > local_acc)
-				{
-					if(i > index_features.size())
-					{
+				if(curr_acc > local_acc){
+					if(i > index_features.size()) {
 						index_features.push_back(j);
 					}
-					else
-					{
+					else {
 						index_features.at(i-1) = j;
 					}
-					if(curr_acc > best_acc)		//keep track of what is globally best as well as locally
-					{
+
+					if(curr_acc > best_acc) {		//keep track of what is globally best as well as locally
 						best_acc = curr_acc;
 						best_features = index_features;
 					}
@@ -385,10 +338,8 @@ void forward_search(vector<vector<double> > &matrix, vector<int> &best_features,
 void feat_remove(vector<int> &to_remove, vector<int> last, int j)
 {		//simply used to remove a feature in our list of features
 	to_remove.clear();
-	for(int i = 0; i < last.size(); ++i)
-	{
-		if(last.at(i) != j)
-		{
+	for(int i = 0; i < last.size(); ++i) {
+		if(last.at(i) != j) {
 			to_remove.push_back(last.at(i));
 		}
 	}
@@ -406,37 +357,30 @@ void backward_search(vector<vector<double> > &matrix, vector<int> &best_features
 	best_acc = curr_acc;
 	current_list = matrix; //initialization
 	int stop = matrix.at(0).size();
-	for(int i = 1; i < stop; ++i)		//sets up initialization
-	{
+	for(int i = 1; i < stop; ++i)	{ //sets up initialization
 		index_features.push_back(i);
 	}
 	bool used = false;
 	vector<int> last = index_features;
 	local_features = index_features;
 	best_features = index_features;
-	for(int i = 1; i < stop; ++i)		//iterate as many times as we have features
-	{
+	for(int i = 1; i < stop; ++i) {	//iterate as many times as we have features
 		cout << "Iteration: " << i << ". Searching over features: ";
-		for(int z = 0; z < index_features.size(); ++z)
-		{
+		for(int z = 0; z < index_features.size(); ++z) {
 			cout << index_features.at(z) << " ";
 		}
 		cout << endl;
-		for(int j = 1; j < stop; ++j)
-		{
+		for(int j = 1; j < stop; ++j) {
 			deter_list = current_list;
 			used = checker(index_features, j);
-			if(used)			//proceed by removing one feature at a time and checking accruacy
-			{
+			if(used) {			//proceed by removing one feature at a time and checking accruacy
 				cout << "removing feature: " << j;
 				remover(deter_list, matrix, j, index_features);
 				curr_acc = cross_validation(deter_list, 1);
 				cout << " has accuracy of: " << setprecision(10) << curr_acc << endl;
-				if(curr_acc > local_acc)
-				{
+				if(curr_acc > local_acc) {
 					feat_remove(local_features, last, j); 
-					if(curr_acc > best_acc)		//keep track of global and local best
-					{
+					if(curr_acc > best_acc)	{	//keep track of global and local best
 						best_acc = curr_acc;
 						best_features = local_features;
 					}
@@ -448,8 +392,7 @@ void backward_search(vector<vector<double> > &matrix, vector<int> &best_features
 		current_list = max_list;
 		cout << "Local max is: " << setprecision(10) << local_acc << endl;
 		cout << "Keeping features: ";
-		for(int p = 0; p < local_features.size(); ++p)
-		{
+		for(int p = 0; p < local_features.size(); ++p) {
 			cout << local_features.at(p) << " ";
 		}
 		cout << endl << endl;
@@ -461,16 +404,14 @@ void backward_search(vector<vector<double> > &matrix, vector<int> &best_features
 
 int main(int argc, char **argv)
 {
-	if(argc == 3){	//only run if the enter the arguments of file name and algorithm option
-
+	if(argc == 3) {	//only run if the enter the arguments of file name and algorithm option
 		vector<double> columns; //will hold all the columns/features
 		vector<vector<double> > rows;	//will hold all the rows/instances
-
 		ifstream file;
 		file.open(argv[1]);
 		string hold = "", subs = "";	//used for holding the lines fo the file and for parsing strings
 		double num = 0.0;
-		while(getline(file, hold)){	//pull all the data from the file
+		while(getline(file, hold)) {	//pull all the data from the file
 			istringstream iss(hold);
 			while(iss){	//parse the string by space
 				iss >> subs;
@@ -487,41 +428,38 @@ int main(int argc, char **argv)
 
 		vector<int> rfeat;
 		double racc = 0.0;
-		if(*argv[2] == '1'){
+		if(*argv[2] == '1') {
 			forward_search(rows, rfeat, racc, *argv[2]);
 			cout << "Best features are: ";
-			for(int i = 0; i < rfeat.size(); ++i)
-			{
+			for(int i = 0; i < rfeat.size(); ++i) {
 				cout << rfeat.at(i) << " ";
 			}
 			cout << endl;
 			cout << "With accuracy of: " << setprecision(10) << racc << endl;
 		}
-		else if(*argv[2] == '2'){	
+		else if(*argv[2] == '2') {	
 			backward_search(rows, rfeat, racc);
 			cout << "Best features are: ";
-			for(int i = 0; i < rfeat.size(); ++i)
-			{
+			for(int i = 0; i < rfeat.size(); ++i) {
 				cout << rfeat.at(i) << " ";
 			}
 			cout << endl;
 			cout << "With accuracy of: " << setprecision(10) << racc << endl;
 		}
-		else if(*argv[2] == '3'){
+		else if(*argv[2] == '3') {
 			forward_search(rows, rfeat, racc, *argv[2]);
 			cout << "Best features are: ";
-			for(int i = 0; i < rfeat.size(); ++i)
-			{
+			for(int i = 0; i < rfeat.size(); ++i) {
 				cout << rfeat.at(i) << " ";
 			}
 			cout << endl;
 			cout << "With accuracy of: " << setprecision(10) << racc << endl;
 		}
-		else{
+		else {
 			cout << "That is an invalid option, goodbye" << endl;
 		}
 	}
-	else if(argc < 3){
+	else if(argc < 3) {
 		cout << "Not enough arguments. ";
 		cout << "Please also enter the file from which to extract data, and which algorithm to use." << endl;
 	}
