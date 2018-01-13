@@ -24,7 +24,7 @@ The data file should be in the following format:
 
 ```
 where the first column is the classification, which in this case is either 1 or 2, and the rest of the columns are the feature data.
-I have kept some files in the [src](https://github.com/ykamo001/BigData/tree/master/data) directory for reference.
+I have kept some files in the [data](https://github.com/ykamo001/BigData/tree/master/data) directory for reference.
 
 
 Once the data has been extracted, it will [normalize](https://en.wikipedia.org/wiki/Feature_scaling) the data, and and use on the three algorithms that was selected.
