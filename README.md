@@ -1,5 +1,5 @@
 # BigData
-BigData is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
+BigData is a Big Data analyzing program that incorporates Machine Learning practices, such as [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
 ## Installing and Running
 To get BIgData and run it, please open up a terminal and run these commands:
@@ -176,3 +176,7 @@ I also found that normalizing the data is also very beneficial, as it produces a
 This probably leads into the presence of some outliers, as one data point could be substantially greater in value as compared to the other values for that same particular feature.
 In the end, there are a lot of conditions you need to look our for when trying to search, as there are a lot of options.
 You could even use a different normalizing function, or choose a different size for the k-fold, or the amount of neighbors you ask, all of which contribute to the accruacy and quality of the answer and search you are looking for.
+
+## Bugs and Limitations
+- Currently does not do file validation or input validation
+- Currently assumes all input is in decimal format. Can be redesigned to handle other types.
