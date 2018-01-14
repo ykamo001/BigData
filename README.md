@@ -16,7 +16,7 @@ To run the application you must pass the file that you would like to extrapolate
 ./bin/optimizer.out ./data/small29.txt 3
 ```
 
-## What you need to know
+## What you need to know and how it works
 The data file should be in the following format:
 ```
 2.0000000e+000  3.7080561e+000  3.0881362e+000  3.9684531e+000  3.6831232e+000  2.2850047e+000  2.9306701e+000  3.3161311e+000  3.1059884e+000  1.5443204e+000  3.9985351e+000
@@ -30,7 +30,7 @@ where the first column is the classification, which in this case is either 1 or 
 I have kept some files in the [data](https://github.com/ykamo001/BigData/tree/master/data) directory for reference and usage.
 
 
-Once the data has been extracted, it will [normalize](https://en.wikipedia.org/wiki/Feature_scaling) the data, and and use on the three algorithms that was selected.
+Once the data has been extracted, it will [normalize](https://en.wikipedia.org/wiki/Feature_scaling) the data, and use one the three algorithms that was selected.
 
 The 3 algorithms you can choose from are:
 
