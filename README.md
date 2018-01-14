@@ -1,21 +1,22 @@
 # BigData
 BigData is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
-## Installing and Running
-To get BigData and run it, please open up a terminal and run these commands:
+## Installing
+To get BigData, please open up a terminal and run these commands:
 ```
 git clone https://github.com/ykamo001/BigData.git
 cd BigData/
 make
+```
+
+## Running
+To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish to use. The format is as such, along with an example:
+```
+./bin/optimizer.out <path to file> <algorithm choice>
 ./bin/optimizer.out ./data/small29.txt 3
 ```
 
-To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish to use. An example of this was shown above, and the format is as such:
-```
-./bin/optimizer.out <path to file> <algorithm choice>
-```
-
-
+## What you need to know
 The data file should be in the following format:
 ```
 2.0000000e+000  3.7080561e+000  3.0881362e+000  3.9684531e+000  3.6831232e+000  2.2850047e+000  2.9306701e+000  3.3161311e+000  3.1059884e+000  1.5443204e+000  3.9985351e+000
@@ -26,7 +27,7 @@ The data file should be in the following format:
 
 ```
 where the first column is the classification, which in this case is either 1 or 2, and the rest of the columns are the feature data.
-I have kept some files in the [data](https://github.com/ykamo001/BigData/tree/master/data) directory for reference.
+I have kept some files in the [data](https://github.com/ykamo001/BigData/tree/master/data) directory for reference and usage.
 
 
 Once the data has been extracted, it will [normalize](https://en.wikipedia.org/wiki/Feature_scaling) the data, and and use on the three algorithms that was selected.
@@ -40,6 +41,8 @@ The 3 algorithms you can choose from are:
 The custom algorithm is the algorithm that I implemented, and is the forward search method, except that it uses 3 nearest neighbors to classify the set.
 
 The program will finish, listing the features to combine that will classify with the highest accuracy.
+
+## Example
 
 Let's take a look at some of the sample data test runs:
 ```
@@ -143,7 +146,6 @@ Keeping feature: 8
 Best features are: 6 2 
 With accuracy of: 91
 ```
-
 There are more sample runs and results in the [reports](https://github.com/ykamo001/BigData/tree/master/reports) directory, along with my analysis of the program.
 
 ## Bugs and Limitations
