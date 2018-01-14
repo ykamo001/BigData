@@ -1,5 +1,5 @@
 # BigData
-BigData is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
+BigData is a Big Data analyzing program that utilizes Artificial Intelligence properites like [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
 ## Installing
 To get BigData, please open up a terminal and run these commands:
