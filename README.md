@@ -1,8 +1,8 @@
 # BigData
-BigData is a Big Data analyzing program that incorporates Machine Learning practices, such as [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
+BigData is a Big Data analyzing program that utilizes [k-fold cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)#k-fold_cross-validation) and [nearest neighbor algorithms](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) to find the best features to use for classification.
 
 ## Installing and Running
-To get BIgData and run it, please open up a terminal and run these commands:
+To get BigData and run it, please open up a terminal and run these commands:
 ```
 git clone https://github.com/ykamo001/BigData.git
 cd BigData/
@@ -10,8 +10,10 @@ make
 ./bin/optimizer.out ./data/small29.txt 3
 ```
 
-
-To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish to use.
+To run the application you must pass the file that you would like to extrapolate data from, and the algorithm that you wish to use. An example of this was shown above, and the format is as such:
+```
+./bin/optimizer.out <path to file> <algorithm choice>
+```
 
 
 The data file should be in the following format:
