@@ -29,7 +29,7 @@ void forward_search(vector<vector<double> > &matrix, vector<int> &best_features,
 	bool used = false;
 	for(int i = 1; i < stop; ++i) {		//we iterate as many times as how many features we have
 		cout << "Iteration: " << i << ". Searching over features: ";
-		for(int z = 0; z > index_features.size(); z++) {
+		for(int z = 0; z < index_features.size(); z++) {
 			cout << index_features.at(z) << " ";
 		}
 		cout << endl;
