@@ -23,13 +23,11 @@ int main(int argc, char **argv)
 		vector<vector<double> > rows;	//will hold all the rows/instances
 		ifstream file;
 		file.open(argv[1]);
-		string hold = "", subs = "";	//used for holding the lines fo the file and for parsing strings
+		string hold = "";	//used for holding the lines fo the file and for parsing strings
 		double num = 0.0;
 		while(getline(file, hold)) {	//pull all the data from the file
 			istringstream iss(hold);
-			while(iss){	//parse the string by space
-				iss >> subs;
-				num = atof(subs.c_str());	//convert the string into a double
+			while(iss >> num){	//parse the string by space
 				columns.push_back(num);	//save each feature 
 			}
 			rows.push_back(columns);	//go onto the next line and save the line as an instance of a row
